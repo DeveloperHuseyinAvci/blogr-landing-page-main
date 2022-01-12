@@ -1,99 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>[Blogr]</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+  </head>
+  <body>
+    <div class="nav-container">
+      <img class="bg-intro-destkop" src="/images/bg-pattern-intro-desktop.svg" alt="#" />
+      <img class="bg-intro-mobile" src="/images/bg-pattern-intro-mobile.svg" alt="">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Product
+      <nav class="navbar">
+        <div class="nav-box-one">
+          <h3>Blogr</h3>
+          <div class="drop-btn">
+            <button class="drop-button-one">
+              Product <i class="fas fa-angle-down icon-one"></i>
+            </button>
+            <div class="drop-content drop-content-one">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">integrations</a>
+            </div>
+          </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+          <div class="drop-btn">
+            <button class="drop-button-two">
+              Company <i class="fas fa-angle-down icon-two"></i>
+            </button>
+            <div class="drop-content drop-content-two">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
 
-  Company
+          <div class="drop-btn">
+            <button class="drop-button-three">
+              Connect <i class="fas fa-angle-down icon-three"></i>
+            </button>
+            <div class="drop-content drop-content-three">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">Linkedln</a>
+            </div>
+          </div>
+        </div>
 
-  About
-  Team
-  Blog
-  Careers
+        <div class="nav-box-two">
+          <a href="#">Login</a>
+          <button>Sing Up</button>
+        </div>
 
-  Connect
+        <div class="nav-media-bar">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+      <!-- ************************* NAVBAR MEDİA START*********************-->
+      <nav class="navbar-media">
+        <div class="nav-media-header">
+          <h3>Blogr</h3>
+          <div class="nav-media-bar">
+            <i class="fas fa-bars icon-media"></i>
+          </div>
+        </div>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+        <div class="media-menu-container">
+          <div class="media-drop-btn">
+            <button class="media-drop-button-one drop-one-block">
+              Product <i class="fas fa-angle-down media-icon-one"></i>
+            </button>
+            <div class="media-drop-content media-drop-content-one">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">integrations</a>
+            </div>
+          </div>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+          <div class="media-drop-btn">
+            <button class="media-drop-button-two drop-two-block">
+              Company <i class="fas fa-angle-down media-icon-two"></i>
+            </button>
+            <div class="media-drop-content media-drop-content-two">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
 
-  Start for Free
-  Learn More
+          <div class="media-drop-btn">
+            <button class="media-drop-button-three drop-three-block">
+              Connect <i class="fas fa-angle-down media-icon-three"></i>
+            </button>
+            <div class="media-drop-content media-drop-content-three">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">Linkedln</a>
+            </div>
+          </div>
 
-  Designed for the future
+          <hr />
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+          <div class="media-nav-box-two">
+            <a href="#">Login</a>
+            <button>Sing Up</button>
+          </div>
+        </div>
+      </nav>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      <!-- **************************NAVBAR MEDİA END******************** -->
+      <div class="nav-main">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        <div class="nav-main-btn-container">
+          <button>Start for Free</button>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    <main>
+      <div class="main-box-one">
+        <h2>Designed for the future</h2>
+        <img class="img-editor-mobile" src="/images/illustration-editor-mobile.svg" alt="#">
+        <div class="text-container-one">
+          <div class="text-content">
+            <h3>Introducing an extensible editor</h3>
+            <p>
+              Blogr features an exceedingly intutive interface wich lets you
+              focus on one thing; creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add gunctionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="text-content">
+            <h3>Robust content management</h3>
+            <p>
+              Flexible content management enables users to easily through post,
+              Increase the usability of your blog by adding customized
+              categoreis,sections,format,or flow, With this functionality,you're
+              in full control
+            </p>
+          </div>
+        </div>
+        <img class="img-editor-desktop" src="/images/illustration-editor-desktop.svg" alt="#" />
+      </div>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+      <div class="main-box-two">
+        <img class="circles" src="/images/bg-pattern-circles.svg" alt="#" />
+        <img class="mobile" src="/images/illustration-phones.svg" alt="#" />
 
-  Product
+        <div class="text-container-two">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind,worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly,no matter where your readers are. keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="main-box-three">
+        <img class="laptop-desktop" src="/images/illustration-laptop-desktop.svg" alt="#" />
+        <img class="laptop-mobile" src="/images/illustration-laptop-mobile.svg" alt="#">
 
-  Company
+        <div class="text-container-three">
+          <div class="text-content text-three">
+            <h3>Free, open,simple</h3>
+            <p>
+              Blogr is a free and source application backed by a large community
+              of helpful developers. It supports features such as code syntax
+              highlighting, RSS feeds, social media integration, third-party
+              commenting tools,and works seamlessly with Google Analytics. The
+              architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
 
-  About
-  Team
-  Blog
-  Careers
+          <div class="text-content text-three">
+            <h3>Power tooling</h3>
+            <p>
+              Batteries included. We built a simple and straightforWard CLI
+              tools that makes customization and deployment a breeze. but
+              capable of producing even the most complicated sites
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+    <footer class="footerbar">
+      <h2>Blogr</h2>
+      <div class="footer-box">
+        <p>Product</p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">integrations</a>
+      </div>
+
+      <div class="footer-box">
+        <p>Company</p>
+
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-box">
+        <p>Connect</p>
+
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Linkedln</a>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/huseyin-avci-11416a206/"
+        >Hüseyin Avcı</a
+      >.
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
